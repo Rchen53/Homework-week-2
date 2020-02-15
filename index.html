@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Index</title>
+    <title>Cat Intro</title>
 
 <style>
 
     body {
-        display: block;
-        margin-left: 15%;
-        margin-right: 15%;
+        display:block;
+        margin:auto;
         background-color:blanchedalmond;
     }
 
-    .navbar {
+    .navbar, .footer, .about-me-container {
         padding: 10px;
     }
 
@@ -24,37 +23,25 @@
         font-size: 30px;
     }
 
-    .row {
-        margin-left: 0px;
-        padding: 0px;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .nav-item {
-        color: white;
-    }
-
-    .nav-link {
+    .nav-link, .footer {
         font-size: 20px;
     }
 
     .about-me-container {
-        margin-top: 10px;
         background-color: white;
+        padding: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    img {
+        width: 100%;
     }
 
     .footer {
         background-color: #343a40;
-        width: 100%;
         text-align: center;
         color: white;
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 18px;
     }
 
 </style>
@@ -62,47 +49,48 @@
 </head>
 
 <body>
-    <!--This creates a navbar on top of the page that spans the whole width. In addition, the expand will result in a toggler button that will drop down the nav-item when screen is considered small. Lastly, the navbar is on lighter colors-->
+    <!--This creates a navbar on top of the page that spans the whole width. In addition, the expand will result in a toggler button that will drop down the nav-item when screen is considered small. Lastly, the navbar is dark bg-->
     <nav class ="navbar navbar-expand-sm navbar-dark bg-dark">
-    <!--Adding a brand name (Raymond Chen) into the navbar-->
-        <a href="#" class="navbar-brand">White Tiger</a>
-    <!--This is a toggler button that display when screen real estate becomes small-->
+    <!--Adding a brand name into the navbar-->
+    <a href="#" class="navbar-brand">Adopt-a-Cat</a>
+        <!--This is a toggler button that display when screen real estate becomes small-->
         <button class ="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-    <!--It helps collapse the items in the navbar so that it is in rows instead of columns. The id will correspond to the data-target so javascript can target the menu and collapse it-->
+        <!--It helps collapse the items in the navbar so that it is in rows instead of columns. The id will correspond to the data-target so javascript can target the menu and collapse it-->
         <div class="collapse navbar-collapse" id="navbarmenu">
-    <!--Due to the nature of bootstrap and default flex box display, you want ml-auto to correct the menu to properly display the nav-item on the right-->
+            <!--Due to the nature of bootstrap and default flex box display, you want ml-auto to correct the menu to properly display the nav-item on the right-->
             <ul class="navbar-nav ml-auto">
-    <!--list of nav-item-->
+                <!--list of nav-item with properly link to respective pages-->
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> About</a>
+                    <a href="index.html" class="nav-link"> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> Portfolio</a>
+                    <a href="portfolio.html" class="nav-link"> Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> Contact</a>
+                    <a href="contact.html" class="nav-link"> Contact</a>
                 </li>
         </div>
     </nav>
-
+    
+    <!--Main Content-->
     <div class="about-me-container">
         <div class="row">
             <div class="col-12">
-                <h2>About Me</h2>
+                <h2>Introduction</h2>
                 <hr>
             </div>
+            <!--Main Text-->
             <div class="col-md-5 col-lg-4 col-xl-3">
                 <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
             </div>
 
             <div class="col-sm-12 col-md-12 col-lg-8">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat tempora odio laborum consequuntur cumque facere hic magni ullam minima totam assumenda, dolorem distinctio odit voluptate corporis officiis expedita aliquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat tempora odio laborum consequuntur cumque facere hic magni ullam minima totam assumenda, dolorem distinctio odit voluptate corporis officiis expedita aliquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat tempora odio laborum consequuntur cumque facere hic magni ullam minima totam assumenda, dolorem distinctio odit voluptate corporis officiis expedita aliquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat tempora odio laborum consequuntur cumque facere hic magni ullam minima totam assumenda, dolorem distinctio odit voluptate corporis officiis expedita aliquam.
+                    Some people say cats are like chips — you can’t have just one! As one of the 85 million cat owners out there, you may be considering adding a new feline friend to your home. Whether your current cat is lonely, her companion cat recently passed away or you simply love cats, it is important to take a few precautions to ensure that your cat-to-cat introductions go as smoothly as possible. We recommend not purchasing from pet stores, as the cats there are no “better” than the homeless animals you’ll find at your local shelter, and they may have come from purebred parents who are kept in inappropriate conditions or not have been given the same amount of veterinary care as shelter cats.
+                    If you have your heart set on a kitten, wait it out until “kitten season” — shelters are often inundated with homeless kittens in the springtime. But remember, in just a few short months that adorable kitten will look just like an adult. Additionally, keep in mind that by adopting an adult cat, you will be able to assess more about his or her fundamental personality than you will be able to for a kitten, which could improve your chances of success.
+                    By planning ahead and taking things slowly, your chances of success when introducing cats are much greater. If you rush into things and attempt to “force” a relationship, you might inadvertently sabotage a relationship that could have otherwise worked out. Here are six steps that can help you ensure a successful introductions:
                 </p>
             </div>
 
@@ -128,14 +116,14 @@
         
     </div>
 
+    <!--Footer for future copyrights-->
     <div class="footer">
         <div class="footer-row">
             <p>&copy;Copyright</p>
         </div>
-    
-    
     </div>
 
+    <!--Added script CDN so that the toggle button can function properly-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

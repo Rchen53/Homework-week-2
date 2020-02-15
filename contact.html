@@ -10,13 +10,12 @@
 <style>
 
     body {
-        display: block;
-        margin-left: 15%;
-        margin-right: 15%;
+        display:block;
+        margin:auto;
         background-color:blanchedalmond;
     }
 
-    .navbar {
+    .navbar, .footer, .contact-container {
         padding: 10px;
     }
 
@@ -24,108 +23,96 @@
         font-size: 30px;
     }
 
-    .row {
-        margin-left: 0px;
-        padding: 0px;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .nav-item {
-        color: white;
-    }
-
-    .nav-link {
+    .nav-link, .footer {
         font-size: 20px;
     }
 
     .contact-container {
-        margin-top: 20px;
-        padding: 20px;
         background-color: white;
+        padding: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    img {
+        width: 100%;
     }
 
     .footer {
         background-color: #343a40;
-        width: 100%;
         text-align: center;
         color: white;
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 18px;
     }
-
 
 </style>
 
 </head>
 
 <body>
+    <!--This creates a navbar on top of the page that spans the whole width. In addition, the expand will result in a toggler button that will drop down the nav-item when screen is considered small. Lastly, the navbar is dark bg-->
     <nav class ="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Your Name</a>
+        <!--Adding a brand name into the navbar-->
+        <a href="#" class="navbar-brand">Adopt Now</a>
+        <!--This is a toggler button that display when screen real estate becomes small-->
         <button class ="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <!--It helps collapse the items in the navbar so that it is in rows instead of columns. The id will correspond to the data-target so javascript can target the menu and collapse it-->
         <div class="collapse navbar-collapse" id="navbarmenu">
+            <!--Due to the nature of bootstrap and default flex box display, you want ml-auto to correct the menu to properly display the nav-item on the right-->
             <ul class="navbar-nav ml-auto">
+                <!--list of nav-item with properly link to respective pages-->
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> About</a>
+                    <a href="index.html" class="nav-link"> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> Portfolio</a>
+                    <a href="portfolio.html" class="nav-link"> Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> Contact</a>
+                    <a href="contact.html" class="nav-link"> Contact</a>
                 </li>
+            </ul>
         </div>
     </nav>
-
-    <div class="contact-container">
+    <!--main contact container-->
+    <div class="contact-container container">
         <div class="row">
             <div class="col-12">
                 <h2>Contact</h2>
                 <hr>
             </div>
-            
-        <div class="col-12">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" class ="form-control">
-            </div>
-
-            <div class="form-group">
-                <label>Email</label>
-                <input type="text" class ="form-control">
-            </div>
-
-            <div class="form-group">
-                 <label>Message</label>
-                 <textarea class ="form-control" rows="5"></textarea>
-            </div>
-
-            <div class="form-group">
-                <button class ="btn btn-primary btn-block">Submit</button>
-            </div>
-            
-            </div>
-        </div>
-                
-
-        </div>
-        
+                <div class="col-12">
+                    <!--name-->
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class ="form-control">
+                    </div>
+                    <!--email-->
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class ="form-control">
+                    </div>
+                    <!--message-->
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class ="form-control" rows="5"></textarea>
+                    </div>
+                    <!--submit-->
+                    <div class="form-group">
+                        <button class ="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </div>
+        </div>    
     </div>
 
+    <!--Footer for future copyrights-->
     <div class="footer">
         <div class="footer-row">
             <p>&copy;Copyright</p>
         </div>
-    
-    
     </div>
 
+    <!--Added script CDN so that the toggle button can function properly-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Portfolio</title>
+    <title>Cat Portfolio</title>
 
 <style>
 
     body {
-        display: block;
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 100%;
+        display:block;
+        margin:auto;
         background-color:blanchedalmond;
     }
 
-    .navbar {
+    .navbar, .footer, .breeds-container {
         padding: 10px;
     }
 
@@ -25,110 +23,105 @@
         font-size: 30px;
     }
 
-    .row {
-        margin-left: 0px;
-        padding: 0px;
-    }
-
-    img {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 10px;
-    }
-
-    .nav-item {
-        color: white;
-    }
-
-    .nav-link {
+    .nav-link, .footer {
         font-size: 20px;
     }
 
-    .about-me-container {
-        margin-top: 10px;
+    .breeds-container {
         background-color: white;
+        padding: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    img {
         width: 100%;
     }
 
     .footer {
         background-color: #343a40;
-        width: 100%;
         text-align: center;
         color: white;
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 18px;
     }
-
+    
 </style>
 
 </head>
 
 <body>
-    <!--This creates a navbar on top of the page that spans the whole width. In addition, the expand will result in a toggler button that will drop down the nav-item when screen is considered small. Lastly, the navbar is on lighter colors-->
+    <!--This creates a navbar on top of the page that spans the whole width. In addition, the expand will result in a toggler button that will drop down the nav-item when screen is considered small. Lastly, the navbar is dark bg-->
     <nav class ="navbar navbar-expand-sm navbar-dark bg-dark">
-    <!--Adding a brand name (Raymond Chen) into the navbar-->
-        <a href="#" class="navbar-brand">Your Name</a>
-    <!--This is a toggler button that display when screen real estate becomes small-->
+        <!--Adding a brand name into the navbar-->
+        <a href="#" class="navbar-brand">Adopt-a-Cat</a>
+        <!--This is a toggler button that display when screen real estate becomes small-->
         <button class ="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-    <!--It helps collapse the items in the navbar so that it is in rows instead of columns. The id will correspond to the data-target so javascript can target the menu and collapse it-->
+        <!--It helps collapse the items in the navbar so that it is in rows instead of columns. The id will correspond to the data-target so javascript can target the menu and collapse it-->
         <div class="collapse navbar-collapse" id="navbarmenu">
-    <!--Due to the nature of bootstrap and default flex box display, you want ml-auto to correct the menu to properly display the nav-item on the right-->
+            <!--Due to the nature of bootstrap and default flex box display, you want ml-auto to correct the menu to properly display the nav-item on the right-->
             <ul class="navbar-nav ml-auto">
-    <!--list of nav-item-->
+                <!--list of nav-item with proper links to their respective page-->
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> About</a>
+                    <a href="index.html" class="nav-link"> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> Portfolio</a>
+                    <a href="portfolio.html" class="nav-link"> Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> Contact</a>
+                    <a href="contact.html" class="nav-link"> Contact</a>
                 </li>
         </div>
     </nav>
 
-    <div class="about-me-container">
+    <!--Main container-->
+    <div class="breeds-container container">
         <div class="row">
             <div class="col-12">
-                <h2>Cat Breeds</h2>
+                <h2>Breeds</h2>
                 <hr>
             </div>
-            
+            <!--Different types of cat-->
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="https://www.catster.com/wp-content/uploads/2018/11/persian-cat-face.jpg">
+                <h4>Persian</h4>
+                <img src="https://www.catster.com/wp-content/uploads/2018/11/persian-cat-face.jpg" alt="orange persain cat">
             </div>
                 
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="https://cdn2-www.cattime.com/assets/uploads/gallery/bengal-cats/bengal-5.jpg">
+                <h4>Tabby</h4>
+                <img src="https://cdn.shopify.com/s/files/1/0997/4496/files/Capture_4a71754f-b5be-4096-8134-3fe2036da28d_grande.PNG?v=1536268991" alt="grey tabby cat with green eyes">
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h4>Maine Coon</h4>
+                <img src="https://cdn2-www.cattime.com/assets/uploads/2011/12/file_2680_Maine-Coon-Cat-breed.jpg" alt="hairy maine coon cat">
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="https://vetstreet.brightspotcdn.com/dims4/default/87764fb/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Ff7%2Fe1c470a33411e087a80050568d634f%2Ffile%2FSiamese-1-645mk062211.jpg">
+                <h4>Maine Scottish Fold</h4>
+                <img src="https://images.theconversation.com/files/139139/original/image-20160926-2451-1h41430.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" alt="chubby scottish fold cat looking shocked">
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hairless-cat-breeds-sphynx-1567008601.jpg?crop=0.642xw:1.00xh;0.0952xw,0&resize=480:*">
+                <h4>Bengal</h4>
+                <img src="https://cdn2-www.cattime.com/assets/uploads/gallery/bengal-cats/bengal-5.jpg" alt="bengal cat with front-paws stuck in bengal print tissue box">
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="https://www.zooplus.ie/magazine/wp-content/uploads/2019/04/maine-coon-cat-breed-768x658.jpg">
+                <h4>American Shorthair</h4>
+                <img src="https://www.catbreedslist.com/uploads/allimg/cat-pictures/American-Shorthair-1.jpg" alt="american shorthair cat in snowy background">
             </div>
-
         </div>
-
     </div>
 
+    <!--Footer for future copyrights-->
     <div class="footer">
         <div class="footer-row">
             <p>&copy;Copyright</p>
         </div>
-    
-    
     </div>
 
+    <!--Added script CDN so that the toggle button can function properly-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
