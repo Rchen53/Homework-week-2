@@ -1,5 +1,14 @@
 # Homework-week-2
-# Using Bootstrap CDN to create a responsive web design that works through most devices.
-# Bootstrap CDN created columns and rows as well as navbar.
-# Javascript CDN assisted with the clickable togglebar.
-# Theme of the project circled around the adoption of cats.
+
+## Information
+-  Pretending to create a adoption webpage for cats with different images corresponding to their respective breed
+
+### Requirements
+1. create a responsive webpage with responsive images
+2. create an index.html, portfolio.html, contact.html
+3. create a footer
+4. works on live server in github
+
+### Resources
+-  Javascript CDN assisted with the clickable togglebar.
+-  Bootstrap CDN created columns and rows as well as navbar.
