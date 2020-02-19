@@ -1,7 +1,7 @@
 # Homework-week-2
 
 ## Information
--  Pretending to create a adoption webpage for cats with different images corresponding to their respective breed
+-  Pretend to create an adoption for cats webpage with different images corresponding to their respective breed
 
 ### Requirements
 1. create a responsive webpage with responsive images
